@@ -1,0 +1,13 @@
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>LibGuides Bookmarklet</title>
+  </head>
+  <body>
+    <a
+      href="javascript: (() => { var LibguidesComURL = 'https://ox.libguides.com/'; var LibguidesBodURL = 'https://libguides.bodleian.ox.ac.uk/'; var CurrentPageURL = window.location.href; var CurrentPageLoc = CurrentPageURL; var RedirectURL = CurrentPageURL.replace(LibguidesBodURL, LibguidesComURL); if (CurrentPageURL.includes('libguides.bodleian.ox.ac.uk')) { window.open(RedirectURL); } else { alert('Not a Bodleian LibGuides page!'); } })();"
+      onclick="alert('Drag that link to your bookmarks bar.'); return false"
+      >LibGuides Bookmarklet</a
+    >
+  </body>
+</html>
